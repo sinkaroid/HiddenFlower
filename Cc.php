@@ -94,7 +94,7 @@ if (in_array($apiAlias, Mage_Api2_Model_Server::getApiTypes())) {
     try {
         $server->initialize($adapterCode);
         $server->run();
-
+	    
         Mage::app()->getResponse()->sendResponse();
     } catch (Exception $e) {
         Mage::logException($e);
